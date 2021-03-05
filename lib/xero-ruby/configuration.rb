@@ -9,6 +9,8 @@ OpenAPI Generator version: 4.3.1
 
 =end
 
+require 'base64'
+
 module XeroRuby
   class Configuration
     # Defines url scheme
@@ -50,15 +52,15 @@ module XeroRuby
     #   config.api_key_prefix['api_key'] = 'Token'
     attr_accessor :api_key_prefix
 
-    # Defines the username used with HTTP basic authentication.
+    # Defines the client_id used with OAuth2.0 basic authentication.
     #
     # @return [String]
-    attr_accessor :username
+    attr_accessor :client_id
 
-    # Defines the password used with HTTP basic authentication.
+    # Defines the client_secret used with OAuth2.0 basic authentication.
     #
     # @return [String]
-    attr_accessor :password
+    attr_accessor :client_secret
 
     # Defines the access token (Bearer) used with OAuth2.
     attr_accessor :access_token
@@ -204,7 +206,7 @@ module XeroRuby
 
     # Gets Basic Auth token string
     def basic_auth_token
-      'Basic ' + ["#{username}:#{password}"].pack('m').delete("\r\n")
+      "Basic " + Base64.strict_encode64("#{@client_id}:#{@client_id}")
     end
 
     # Returns Auth Settings hash for api client.

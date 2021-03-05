@@ -18,6 +18,10 @@ require 'xero-ruby/version'
 require 'xero-ruby/configuration'
 
 # Models
+require 'xero-ruby/models/identity/access_token'
+require 'xero-ruby/models/identity/connection'
+require 'xero-ruby/models/identity/refresh_token'
+require 'xero-ruby/models/identity/token_set'
 require 'xero-ruby/models/payroll_uk/account'
 require 'xero-ruby/models/payroll_uk/accounts'
 require 'xero-ruby/models/payroll_uk/address'
@@ -452,6 +456,7 @@ require 'xero-ruby/models/accounting/users'
 require 'xero-ruby/models/accounting/validation_error'
 
 # APIs
+require 'xero-ruby/api/identity_api'
 require 'xero-ruby/api/payroll_uk_api'
 require 'xero-ruby/api/payroll_nz_api'
 require 'xero-ruby/api/payroll_au_api'
