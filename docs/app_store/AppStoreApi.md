@@ -42,7 +42,7 @@ api_instance = xero_client.<api_set>
 
 
 
-subscription_id = '00000000-0000-0000-0000-000000000000' # String | Unique identifier for Subscription object
+subscription_id = 00000000-0000-0000-0000-000000000000 # String | Unique identifier for Subscription object
 begin
   #Retrieves a subscription for a given subscriptionId
   result = api_instance.get_subscription(subscription_id)
@@ -57,7 +57,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subscription_id** | [**String**](.md)| Unique identifier for Subscription object | 
+ **subscription_id** | **String**| Unique identifier for Subscription object | 
 
 ### Return type
 
@@ -104,7 +104,7 @@ api_instance = xero_client.<api_set>
 
 
 
-subscription_id = '00000000-0000-0000-0000-000000000000' # String | Unique identifier for Subscription object
+subscription_id = 00000000-0000-0000-0000-000000000000 # String | Unique identifier for Subscription object
 begin
   #Gets all usage records related to the subscription
   result = api_instance.get_usage_records(subscription_id)
@@ -119,7 +119,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subscription_id** | [**String**](.md)| Unique identifier for Subscription object | 
+ **subscription_id** | **String**| Unique identifier for Subscription object | 
 
 ### Return type
 
@@ -166,8 +166,8 @@ api_instance = xero_client.<api_set>
 
 
 
-subscription_id = '00000000-0000-0000-0000-000000000000' # String | Unique identifier for Subscription object
-subscription_item_id = '00000000-0000-0000-0000-000000000000' # String | The unique identifier of the subscriptionItem
+subscription_id = 00000000-0000-0000-0000-000000000000 # String | Unique identifier for Subscription object
+subscription_item_id = 00000000-0000-0000-0000-000000000000 # String | The unique identifier of the subscriptionItem
 create_usage_record = { "timestamp": "2022-01-21T13:01:00", "quantity": 10 } # CreateUsageRecord | Contains the quantity for the usage record to create
 begin
   #Send metered usage belonging to this subscription and subscription item
@@ -183,8 +183,8 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subscription_id** | [**String**](.md)| Unique identifier for Subscription object | 
- **subscription_item_id** | [**String**](.md)| The unique identifier of the subscriptionItem | 
+ **subscription_id** | **String**| Unique identifier for Subscription object | 
+ **subscription_item_id** | **String**| The unique identifier of the subscriptionItem | 
  **create_usage_record** | [**CreateUsageRecord**](CreateUsageRecord.md)| Contains the quantity for the usage record to create | 
 
 ### Return type
@@ -232,9 +232,9 @@ api_instance = xero_client.<api_set>
 
 
 
-subscription_id = '00000000-0000-0000-0000-000000000000' # String | Unique identifier for Subscription object
-subscription_item_id = '00000000-0000-0000-0000-000000000000' # String | The unique identifier of the subscriptionItem
-usage_record_id = '00000000-0000-0000-0000-000000000000' # String | The unique identifier of the usage record
+subscription_id = 00000000-0000-0000-0000-000000000000 # String | Unique identifier for Subscription object
+subscription_item_id = 00000000-0000-0000-0000-000000000000 # String | The unique identifier of the subscriptionItem
+usage_record_id = 00000000-0000-0000-0000-000000000000 # String | The unique identifier of the usage record
 update_usage_record = { "quantity": 10 } # UpdateUsageRecord | Contains the quantity for the usage record to update
 begin
   #Update and existing metered usage belonging to this subscription and subscription item
@@ -250,9 +250,9 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **subscription_id** | [**String**](.md)| Unique identifier for Subscription object | 
- **subscription_item_id** | [**String**](.md)| The unique identifier of the subscriptionItem | 
- **usage_record_id** | [**String**](.md)| The unique identifier of the usage record | 
+ **subscription_id** | **String**| Unique identifier for Subscription object | 
+ **subscription_item_id** | **String**| The unique identifier of the subscriptionItem | 
+ **usage_record_id** | **String**| The unique identifier of the usage record | 
  **update_usage_record** | [**UpdateUsageRecord**](UpdateUsageRecord.md)| Contains the quantity for the usage record to update | 
 
 ### Return type
