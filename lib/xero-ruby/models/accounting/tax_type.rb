@@ -96,6 +96,47 @@ module XeroRuby::Accounting
     SROVRRSY23 ||= "SROVRRSY23".freeze
     SROVRLVGY23 ||= "SROVRLVGY23".freeze
     SRLVGY23 ||= "SRLVGY23".freeze
+    TXRCN33_Y23 ||= "TXRCN33Y23".freeze
+    TXRCREY23 ||= "TXRCREY23".freeze
+    TXRCESSY23 ||= "TXRCESSY23".freeze
+    TXRCTSY23 ||= "TXRCTSY23".freeze
+    IM ||= "IM".freeze
+    IMY23 ||= "IMY23".freeze
+    IMESS ||= "IMESS".freeze
+    IMESSY23 ||= "IMESSY23".freeze
+    IMN33 ||= "IMN33".freeze
+    IMN33_Y23 ||= "IMN33Y23".freeze
+    IMRE ||= "IMRE".freeze
+    IMREY23 ||= "IMREY23".freeze
+    BADDEBTRECOVERY ||= "BADDEBTRECOVERY".freeze
+    BADDEBTRECOVERYY23 ||= "BADDEBTRECOVERYY23".freeze
+    OUTPUTY24 ||= "OUTPUTY24".freeze
+    DSOUTPUTY24 ||= "DSOUTPUTY24".freeze
+    INPUTY24 ||= "INPUTY24".freeze
+    IGDSINPUT2_Y24 ||= "IGDSINPUT2Y24".freeze
+    TXPETINPUTY24 ||= "TXPETINPUTY24".freeze
+    TXESSINPUTY24 ||= "TXESSINPUTY24".freeze
+    TXN33_INPUTY24 ||= "TXN33INPUTY24".freeze
+    TXREINPUTY24 ||= "TXREINPUTY24".freeze
+    TXCAY24 ||= "TXCAY24".freeze
+    BADDEBTRELIEFY24 ||= "BADDEBTRELIEFY24".freeze
+    IGDSINPUT3_Y24 ||= "IGDSINPUT3Y24".freeze
+    SROVRRSY24 ||= "SROVRRSY24".freeze
+    SROVRLVGY24 ||= "SROVRLVGY24".freeze
+    SRLVGY24 ||= "SRLVGY24".freeze
+    TXRCTSY24 ||= "TXRCTSY24".freeze
+    TXRCESSY24 ||= "TXRCESSY24".freeze
+    TXRCN33_Y24 ||= "TXRCN33Y24".freeze
+    TXRCREY24 ||= "TXRCREY24".freeze
+    IMY24 ||= "IMY24".freeze
+    IMESSY24 ||= "IMESSY24".freeze
+    IMN33_Y24 ||= "IMN33Y24".freeze
+    IMREY24 ||= "IMREY24".freeze
+    BADDEBTRECOVERYY24 ||= "BADDEBTRECOVERYY24".freeze
+    OSOUTPUT2 ||= "OSOUTPUT2".freeze
+    BLINPUT3 ||= "BLINPUT3".freeze
+    BLINPUT3_Y23 ||= "BLINPUT3Y23".freeze
+    BLINPUT3_Y24 ||= "BLINPUT3Y24".freeze
 
     # Builds the enum from string
     # @param [String] The enum value in the form of the string
