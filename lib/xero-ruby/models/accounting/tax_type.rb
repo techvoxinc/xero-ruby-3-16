@@ -149,8 +149,8 @@ module XeroRuby::Accounting
     # @param [String] The enum value in the form of the string
     # @return [String] The enum value
     def build_from_hash(value)
-      constantValues = TaxType.constants.select { |c| TaxType::const_get(c) == value }
-      raise "Invalid ENUM value #{value} for class #TaxType" if constantValues.empty?
+      # constantValues = TaxType.constants.select { |c| TaxType::const_get(c) == value }
+      # raise "Invalid ENUM value #{value} for class #TaxType" if constantValues.empty?
       value
     end
   end
